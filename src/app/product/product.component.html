@@ -1,0 +1,7 @@
+<ul class="list-group">
+  <!-- ngFor includes tag that contains it in iteration -->
+  <li class="list-group-item" *ngFor="let product of products">
+    <h5 class="float-left">{{product.name}}</h5>
+    <p class="float-right">{{product.price}}</p>
+  </li>
+</ul>

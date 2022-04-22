@@ -1,0 +1,18 @@
+<p>Add new Products</p>
+<label>Name</label>
+<!-- two way binding -->
+<!-- <input type="text" class="form-control" [(ngModel)]="newProductName"> -->
+
+<!-- using local ref -->
+<!-- use newProductName : HTMLInputElement and access its value by newProductName.value  -->
+<input type="text" class="form-control" #newProductName>
+
+<!-- using @ViewChild('newProductName') productName: ElementRef -->
+<!-- access value of element:::  productName.nativeElement.value     -->
+<!-- <input type="text" class="form-control" #newProductName> -->
+
+<br>
+<label>Price</label>
+<input type="number" class="form-control" [(ngModel)]="newProductPrice">
+<br>
+<button class="btn btn-primary" (click)="addProduct()">Add Note</button>
