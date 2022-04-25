@@ -1,5 +1,5 @@
-<p>Add new Products</p>
-<label>Name</label>
+<p appMyDirective>Add new Products</p>
+<label appRendererDirective>Name</label>
 <!-- two way binding -->
 <!-- <input type="text" class="form-control" [(ngModel)]="newProductName"> -->
 
@@ -12,7 +12,7 @@
 <!-- <input type="text" class="form-control" #newProductName> -->
 
 <br>
-<label>Price</label>
+<label appRendererDirective>Price</label>
 <input type="number" class="form-control" [(ngModel)]="newProductPrice">
 <br>
 <button class="btn btn-primary" (click)="addProduct()">Add Note</button>
